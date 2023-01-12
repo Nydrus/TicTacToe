@@ -96,12 +96,12 @@ window.onload = function () {
                 }
             }
             else{
-        
+                alert("Game is over. Please click the New Game button to start again.");
     } 
         }
         
     else{
-        
+        alert("This box was already filled. Please click on an empty box.");
     }
 }
 }
