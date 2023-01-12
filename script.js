@@ -85,9 +85,13 @@ window.onload = function () {
                 for(var i = 0;i < winner.length; i++) {
                     if((symbol[winner[i][0]] == s) && (symbol[winner[i][1]] == s) &&(symbol[winner[i][2]] == s)) {
                         document.getElementById("result").innerText = 
-                            "Player " + s + " Won!";
+                            "Player '" + s + "' Won!";
                             gameOver = true;
                     }
+                }
+                if(turn > 9 && gameOver != true) {
+                    document.getElementById("result").innerText =
+                        "GAME OVER! IT'S A DRAW!"
                 }
             }
             else{
