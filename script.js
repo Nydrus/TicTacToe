@@ -80,6 +80,15 @@ window.onload = function () {
                 }
                 turn++;
                 filled[num - 1] = true;
+                //5. Winning condition
+                var s = symbol[num - 1];
+                for(var i = 0;i < winner.length; i++) {
+                    if((symbol[winner[i][0]] == s) && (symbol[winner[i][1]] == s) &&(symbol[winner[i][2]] == s)) {
+                        document.getElementById("result").innerText = 
+                            "Player " + s + " Won!";
+                            gameOver = true;
+                    }
+                }
             }
             else{
         
