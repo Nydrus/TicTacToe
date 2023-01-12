@@ -89,6 +89,7 @@ window.onload = function () {
                             gameOver = true;
                     }
                 }
+                //Draw condition
                 if(turn > 9 && gameOver != true) {
                     document.getElementById("result").innerText =
                         "GAME OVER! IT'S A DRAW!"
